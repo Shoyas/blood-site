@@ -1,0 +1,53 @@
+.text-underline{
+    height: 10%;
+    width: 100%;
+    background-color: #ff0000;
+}
+.header-tag{
+    text-align: center;
+    margin-top: 5%;
+}
+.header-tag h6{
+    font-size: 1vw;
+}
+.header-tag h4{
+    font-size: 3vw;
+}
+.card-one, .card-two, .card-three{
+    background-repeat: no-repeat;
+    display: cover;
+    margin-top: 3rem;
+}
+.card-one{
+    background-image: url(../../../asset/image/mt-1802-home-img01.jpg);
+}
+.card-two{
+    background-image: url(../../../asset/image/mt-1802-home-img02.jpg);
+}
+.card-three{
+    background-image: url(../../../asset/image/mt-1802-home-img03.jpg);
+}
+.card-tag{
+    margin-top: 9rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.card-tag h2{
+    font-size: 2vw;
+    font-weight: 400;
+}
+.card-tag p{
+    font-size: 1vw;
+    font-weight: 300;
+}
+.button-glow:focus,
+.button-glow:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
+.card-tag Button{
+    border: 1px solid #ff0000;
+    border-radius: 0px !important;
+    width: 30% !important;
+    font-size: 1vw;
+}

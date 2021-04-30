@@ -1,0 +1,29 @@
+.impact-tag{
+    margin-top: 10%;
+}
+.impact-tag h6{
+    font-size: 1vw;
+}
+.impact-tag h4{
+    font-size: 3vw;
+}
+.impact-tag i{
+    font-size: 2vw;
+    color: gray;
+}
+.text-underline{
+    height: 1%;
+    width: 10%;
+    background-color: #ff0000;
+}
+.impact-tag Button{
+    border: 1px solid #ff0000;
+    border-radius: 0px !important;
+    width: 20% !important;
+    font-size: 1vw;
+}
+.button-glow:focus,
+.button-glow:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
