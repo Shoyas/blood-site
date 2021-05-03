@@ -1,0 +1,36 @@
+.become-donar-area{
+    background-image: url(../../asset/image/mt-1802-content-bg04.jpg);
+    background-size: 100%; /* size the background image at 100% like any responsive img tag */
+    background-repeat:no-repeat;
+    height: 21rem;
+
+}
+.button-glow:focus,
+.button-glow:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
+.become-donar-area Button{
+    border: 1px solid #ff0000;
+    border-radius: 0px !important;
+    width: 15% !important;
+    font-size: 1vw;
+    margin-left: 20%;
+}
+.donar-tag h2{
+    font-size: 3vw;
+}
+.donar-tag i{
+    font-size: 1vw;
+}
+.donar-tag{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+}
+.tag-line{
+    width: 5%;
+    height: 1%;
+    background-color: #ff0000;
+    margin-left: 20%;
+}

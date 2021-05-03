@@ -1,0 +1,36 @@
+.service-card-one, .service-card-two, .service-card-three{
+    background-repeat: no-repeat;
+    display: cover;
+    margin-top: 3rem;
+    height: 20rem;
+}
+.service-card-one{
+    background-image: url(../../asset/image/mt-1802-home-img04.jpg);
+}
+.service-card-two{
+    background-image: url(../../asset/image/mt-1802-home-img05.jpg);
+}
+.service-card-three{
+    background-image: url(../../asset/image/mt-1802-home-img06.jpg);
+}
+.service-card-tag{
+    margin-top: 12rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+.service-card-tag h2{
+    font-size: 2vw;
+    font-weight: 400;
+}
+.button-glow:focus,
+.button-glow:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
+.service-card-tag Button{
+    border: 1px solid #ff0000;
+    border-radius: 0px !important;
+    width: 30% !important;
+    font-size: 1vw;
+}
+

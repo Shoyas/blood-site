@@ -1,17 +1,18 @@
-.text-underline{
-    height: 10%;
-    width: 100%;
-    background-color: #ff0000;
-}
-.header-tag{
+.header-tag-one{
     text-align: center;
     margin-top: 5%;
 }
-.header-tag h6{
+.header-tag-one h6{
     font-size: 1vw;
 }
-.header-tag h4{
+.header-tag-one h4{
     font-size: 3vw;
+}
+.text-underline-one{
+    height: 1%;
+    width: 10%;
+    background-color: #ff0000;
+    
 }
 .card-one, .card-two, .card-three{
     background-repeat: no-repeat;
@@ -50,4 +51,85 @@
     border-radius: 0px !important;
     width: 30% !important;
     font-size: 1vw;
+}
+
+/* Responsive cards */
+@media screen and (max-width: 1920px) {
+    .row{
+        margin-left: 1%;
+    }
+    .response-card{
+        padding-left: 1%;
+        padding-right: 1%;
+        background-repeat: no-repeat;
+        background-size: 95% 95%;
+        margin: 3px auto 0;
+        position: relative;
+        
+    }
+    
+}
+@media screen and (max-width: 1080px) {
+     
+}
+@media screen and (max-width: 840px) {
+     
+}
+@media screen and (max-width: 780px) {
+     
+}
+@media screen and (max-width: 540px) {
+    .header-tag-one h6{
+        font-size: 2vw;
+    }
+    .header-tag-one h4{
+        font-size: 5vw;
+    }
+    .card-tag h2{
+        font-size: 4vw;
+        font-weight: 400;
+    }
+    .card-tag p{
+        font-size: 2vw;
+        font-weight: 300;
+    }
+    .card-tag Button{
+        width: 40% !important;
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 414px) {
+    
+}
+@media screen and (max-width: 411px) {
+    
+}
+@media screen and (max-width: 375px){
+       
+}
+@media screen and (max-width: 360px) {
+    
+}
+@media screen and (max-width: 320px) {
+    
+}
+@media screen and (max-width: 280px) {
+    .header-tag-one h6{
+        font-size: 2vw;
+    }
+    .header-tag-one h4{
+        font-size: 5vw;
+    }
+    .card-tag h2{
+        font-size: 4vw;
+        font-weight: 400;
+    }
+    .card-tag p{
+        font-size: 2vw;
+        font-weight: 300;
+    }
+    .card-tag Button{
+        width: 40% !important;
+        font-size: 3vw;
+    }
 }

@@ -8,7 +8,7 @@ import slideImage2 from '../../asset/image/mt-1802-slider-img02.jpg';
 const Slider = () => {
     return (
         <>
-            <Carousel>
+            <Carousel className="response-slider">
                 <Carousel.Item>
                     <img
                     className="d-block w-100"

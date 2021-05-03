@@ -26,12 +26,127 @@
     outline:0px !important;
 }
 .carousel-indicators li {
-    background-color: #ff0000 !important;
-    width: 60px;
-    height: 3px;
-    opacity: .3;
-    transition: opacity .3s ease;
+    display: none !important;
+}
+.carousel-item {
+    transition: transform .6s ease-in-out !important;
+}
+.response-slider{
+    margin-top: 5.6%;
 }
 
-    
+/* Responsive */
+
+@media screen and (max-width: 840px) {
+    .response-slider{
+        margin-top: 13%;
+    }  
+}
+@media screen and (max-width: 1080px) {
+    .response-slider{
+        margin-top: 9%;
+    }  
+}
+@media screen and (max-width: 780px) {
+    .response-slider{
+        margin-top: 13%;
+    }  
+}
+@media screen and (max-width: 540px) {
+    .response-slider{
+        margin-top: 19%;
+    }
+    .slider-tag{
+        margin: 0% 0% -4% -18%; 
+    }  
+}
+@media screen and (max-width: 414px) {
+    .response-slider{
+        margin-top: 25%;
+    }
+    .slider-tag Button{
+        width: 30% !important;
+        font-size: 3vw;
+    }
+    .slider-tag{
+        margin: 0% 0% -11% -18%; 
+    } 
+}
+@media screen and (max-width: 411px) {
+    .slider-tag {
+        margin: 0% 0% -12% -20%;
+    }
+    .slider-tag Button{
+        width: 29% !important;
+        font-size: 3vw;
+    }
+    .slider-tag h3{
+        font-size: 3vw;
+    }
+    .slider-tag p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 375px){
+    .response-slider{
+        margin-top: 29%;
+    }
+    .slider-tag {
+        margin: 0% 0% -14% -18%;
+    }    
+}
+@media screen and (max-width: 360px) {
+    .response-slider{
+        margin-top: 29%;
+    }
+    .slider-tag {
+        margin: 0% 0% -14% -20%;
+    }
+    .slider-tag Button{
+        font-size: 2vw;
+    }
+    .slider-tag h3{
+        font-size: 3vw;
+    }
+    .slider-tag p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 320px) {
+    .response-slider{
+        margin-top: 33%;
+    }
+    .slider-tag {
+        margin: 0% 0% -16% -20%;
+    }
+    .slider-tag Button{
+        width: 30% !important;
+        font-size: 3vw;
+    }
+    .slider-tag h3{
+        font-size: 3vw;
+    }
+    .slider-tag p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 280px) {
+    .response-slider{
+        margin-top: 38%;
+    }
+    .slider-tag{
+        margin: 0% 0% -18% 0%;    
+    }
+    .slider-tag Button{
+        width: 40% !important;
+        font-size: 3vw;
+    }
+    .slider-tag h3{
+        margin: 0% 0% 3% 0%;
+    }
+    .slider-tag p{
+        margin: 0% 0% 2% 0%;
+    }
+}
+
     

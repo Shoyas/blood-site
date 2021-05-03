@@ -1,0 +1,34 @@
+.header-tag-two{
+    margin-top: 2%;
+}
+.header-tag-two h6{
+    font-size: 1vw;
+}
+.header-tag-two h4{
+    font-size: 3vw;
+}
+.header-tag-two i{
+    font-size: 1vw;
+    font-weight: 400;
+    color: gray;
+}
+.text-underline-two{
+    height: 1%;
+    width: 10%;
+    background-color: #ff0000;
+}
+ul {
+    list-style-type: none
+}
+li {
+    display: grid;
+    grid-template-columns: 7% auto;
+    justify-content: start;
+    align-items: center;
+}
+li::before {
+    content: ">";
+    font-size: 1vw;
+    color: red;
+    font-weight: bold;
+}  

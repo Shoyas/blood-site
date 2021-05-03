@@ -1,13 +1,14 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import logo from '../../asset/image/mt-1802-logo02.png'
+import logo from '../../asset/image/mt-1802-logo02.png';
 
 const Navigation = () => {
     return (
         <>
-            <div>
-                <Navbar expand="lg" bg="light" variant="light">
+        {/* style={{marginBottom: '5.6%'}} */}
+            <div style={{marginBottom: '5.6%'}}>
+                <Navbar expand="lg" bg="light" variant="light" fixed="top">
                     <Navbar.Brand>
                         <Link className="nav-link d-flex" to="/">
                             <img
