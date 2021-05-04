@@ -1,0 +1,98 @@
+.banner-area{
+    background-image: url(../../asset/image/mt-1802-slider-img02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 37rem;
+}
+.banner-area h2, .banner-area i{
+    color: white;
+    
+} 
+.banner-area h2{
+    font-size: 3vw;
+}
+.banner-area i{
+    font-size: 2vw;
+}
+.banner-tag{
+    margin: 0% 0% 0% 14%;
+    padding: 13% 0% 0% 0%;
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px) {
+    .banner-area{
+        height: 20rem;
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 840px) {
+     
+}
+@media screen and (max-width: 780px) {
+    .banner-area{
+        height: 15rem;
+        margin-top: 14%;
+    }
+}
+@media screen and (max-width: 540px) {
+    .banner-area{
+        height: 11rem;
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .banner-area{
+        height: 8rem;
+        margin-top: 26%;
+    }
+    .banner-area h2{
+        font-size: 5vw;
+        margin-bottom: -2%;
+    }
+    .banner-area i{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 411px) {
+    .banner-area{
+        height: 8rem;
+        margin-top: 26%;
+    }
+    .banner-area h2{
+        font-size: 5vw;
+        margin-bottom: -2%;
+    }
+    .banner-area i{
+        font-size: 3vw;
+    }
+    
+}
+@media screen and (max-width: 375px){
+       
+}
+@media screen and (max-width: 360px) {
+    .banner-area{
+        height: 8rem;
+        margin-top: 30%;
+    }
+    .banner-area h2{
+        font-size: 5vw;
+        margin-bottom: -2%;
+    }
+    .banner-area i{
+        font-size: 3vw;
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    
+}
+@media screen and (max-width: 280px) {
+    .banner-area{
+        height: 6rem;
+        margin-top: 38%;
+    }
+    
+}

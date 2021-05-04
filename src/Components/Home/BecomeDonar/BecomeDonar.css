@@ -3,7 +3,6 @@
     background-size: 100%; /* size the background image at 100% like any responsive img tag */
     background-repeat:no-repeat;
     height: 21rem;
-
 }
 .button-glow:focus,
 .button-glow:active{
@@ -33,4 +32,129 @@
     height: 1%;
     background-color: #ff0000;
     margin-left: 20%;
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px) {
+    .become-donar-area{
+        height: 11rem;
+    }
+    .become-donar-area Button{
+        width: 25% !important;
+        font-size: 2vw;
+        margin-left: 15%;
+    }
+    .donar-tag h2{
+        font-size: 3vw;
+    }
+    .donar-tag i{
+        font-size: 2vw;
+    }
+    .donar-tag{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+    }
+    .tag-line{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 840px) {
+     
+}
+@media screen and (max-width: 780px) {
+    .become-donar-area{
+        height: 8rem;
+    }
+}
+@media screen and (max-width: 540px) {
+    .become-donar-area{
+        height: 96px;
+    }
+    .become-donar-area Button{
+        width: 30% !important;
+        font-size: 2vw;
+        margin-left: 15%;
+    }
+    .donar-tag h2{
+        font-size: 3vw;
+        margin-bottom: -8px;
+    }
+    .donar-tag i{
+        font-size: 2vw;
+    }
+    .donar-tag{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+    }
+    .tag-line{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .become-donar-area{
+        height: 4rem;
+    }
+    .become-donar-area Button{
+        width: 30% !important;
+        font-size: 2vw;
+        margin-left: 15%;
+    }
+    .donar-tag h2{
+        font-size: 3vw;
+        margin-bottom: -8px;
+    }
+    .donar-tag i{
+        font-size: 2vw;
+    }
+    .donar-tag{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+    }
+    .tag-line{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 411px) {
+    
+}
+@media screen and (max-width: 375px){
+       
+}
+@media screen and (max-width: 360px) {
+    .become-donar-area{
+        height: 4rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .become-donar-area{
+        height: 56px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .become-donar-area{
+        height: 50px;
+    }
+    .become-donar-area Button{
+        width: 40% !important;
+        font-size: 3vw;
+        margin-left: 15%;
+        margin-top: -10px;
+    }
+    .donar-tag h2{
+        font-size: 3vw;
+    }
+    .donar-tag i{
+        font-size: 2vw;   
+    }
+    .donar-tag{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+    }
+    .tag-line{
+        margin-left: 15%;
+    }
 }

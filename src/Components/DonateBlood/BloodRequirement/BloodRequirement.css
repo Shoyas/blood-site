@@ -1,0 +1,87 @@
+.bloodRequire-area{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.bloodRequire-tag{
+    margin-top: 3%;
+}
+.bloodRequire-tag h4{
+    font-size: 2vw;
+}
+.bloodRequire-tag h5{
+    font-size: 1vw;
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px) {
+    
+}
+@media screen and (max-width: 840px) {
+     
+}
+@media screen and (max-width: 780px) {
+    .bloodRequire-tag h4{
+        font-size: 3vw;
+    }
+    .bloodRequire-tag h5{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 540px) {
+    .bloodRequire-tag{
+        margin-bottom: 7%;
+    }
+    .button-glow {
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 414px) {
+    .bloodRequire-tag h4{
+        font-size: 5vw;
+    }
+    .bloodRequire-tag h5{
+        font-size: 4vw;
+    }
+    .bloodRequire-tag{
+        margin-bottom: 7%;
+    }
+    .button-glow {
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 411px) {
+    .bloodRequire-tag{
+        margin-bottom: 7%;
+    }
+    .button-glow {
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 375px){
+       
+}
+@media screen and (max-width: 360px) {
+    .bloodRequire-tag{
+        margin-bottom: 7%;
+    }
+    .bloodRequire-tag h4{
+        font-size: 5vw;
+    }
+    .bloodRequire-tag h5{
+        font-size: 4vw;
+    }
+    .button-glow {
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 320px) {
+    
+}
+@media screen and (max-width: 280px) {
+    .bloodRequire-tag{
+        margin-bottom: 7%;
+    }
+    .button-glow {
+        font-size: 2vw;
+    }
+}

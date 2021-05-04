@@ -6,6 +6,7 @@ import {
     Route
   } from "react-router-dom";
 import Home from './Components/Home/Home';
+import DonateBlood from './Components/DonateBlood/DonateBlood';
 
 const App = () => {
     return (
@@ -17,16 +18,16 @@ const App = () => {
                 <Route path="/home">
                     <Home />
                 </Route>
-                {/* <Route path="/donateBlood">
-                    <Home />
+                <Route path="/donateBlood">
+                    <DonateBlood />
                 </Route>
-                <Route path="/home">
+                {/* <Route path="/home">
                     <Home />
-                </Route>
-                <Route path="/home">
+                </Route> */}
+                {/* <Route path="/home">
                     <Home />
-                </Route>
-                <Route path="/home">
+                </Route> */}
+                {/* <Route path="/home">
                     <Home />
                 </Route> */}
             </Switch>
