@@ -23,7 +23,7 @@ const GetInvolvedTwo = () => {
                                     
                                 </ul>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-6 column-space">
                                 <ul>
                                     <li><i>Increasing communication with our members.</i></li>
                                     <li><i>High quality assessment, diagnosis and treatment.</i></li>
@@ -32,7 +32,7 @@ const GetInvolvedTwo = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 getInvolved-pic">
                         <img className="img-fluid" src={image_two} alt="" srcset=""/>
                     </div>
                 </div>
