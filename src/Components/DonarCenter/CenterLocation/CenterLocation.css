@@ -1,0 +1,32 @@
+.center-tag h2{
+    text-align: center;
+}
+.header-line{
+    height: 2%;
+    width: 10%;
+    background: #ff0000;
+    margin: 0 auto;  
+    position: relative;
+    z-index : 1;
+}
+.header-line:before {
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+    height: 2%;
+    width: 50%;
+    border-bottom:2px solid #ff0000;
+}
+.location-card{
+    width: 90%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+.location-card img{
+    width: 100%;
+    display: cover;
+}
+.location-card-content h3{
+    margin-top: 5%;
+}

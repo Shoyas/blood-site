@@ -1,0 +1,160 @@
+.contactAppointment-area{
+    background-image: url(../../asset/image/mt-1802-content-bg08.jpg);
+    background-size: 100%; /* size the background image at 100% like any responsive img tag */
+    background-repeat:no-repeat;
+    height: 21rem;
+}
+.button-glow:focus,
+.button-glow:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
+.contactAppointment-area Button{
+    border: 1px solid #ff0000;
+    border-radius: 0px !important;
+    width: 15% !important;
+    font-size: 1vw;
+    margin-left: 20%;
+}
+.donar-tag h2{
+    font-size: 3vw;
+}
+.donar-tag i{
+    font-size: 1vw;
+}
+.donar-tag{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+}
+.tag-line{
+    width: 5%;
+    height: 1%;
+    background-color: #ff0000;
+    margin-left: 20%;
+}
+
+/* Responsive */
+@media screen and (max-width: 1080px) {
+    .contactAppointment-area{
+        height: 11rem;
+    }
+    .contactAppointment-area Button{
+        width: 25% !important;
+        font-size: 2vw;
+        margin-left: 15%;
+    }
+    .donar-tag h2{
+        font-size: 3vw;
+    }
+    .donar-tag i{
+        font-size: 2vw;
+    }
+    .donar-tag{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+    }
+    .tag-line{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 840px) {
+     
+}
+@media screen and (max-width: 780px) {
+    .contactAppointment-area{
+        height: 8rem;
+    }
+}
+@media screen and (max-width: 540px) {
+    .contactAppointment-area{
+        height: 96px;
+    }
+    .contactAppointment-area Button{
+        width: 30% !important;
+        font-size: 2vw;
+        margin-left: 15%;
+    }
+    .donar-tag h2{
+        font-size: 3vw;
+        margin-bottom: -8px;
+    }
+    .donar-tag i{
+        font-size: 2vw;
+    }
+    .donar-tag{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+    }
+    .tag-line{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .contactAppointment-area{
+        height: 4rem;
+    }
+    .contactAppointment-area Button{
+        width: 30% !important;
+        font-size: 2vw;
+        margin-left: 15%;
+    }
+    .donar-tag h2{
+        font-size: 3vw;
+        margin-bottom: -8px;
+    }
+    .donar-tag i{
+        font-size: 2vw;
+    }
+    .donar-tag{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+    }
+    .tag-line{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 411px) {
+    
+}
+@media screen and (max-width: 375px){
+       
+}
+@media screen and (max-width: 360px) {
+    .contactAppointment-area{
+        height: 4rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .contactAppointment-area{
+        height: 56px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .contactAppointment-area{
+        height: 50px;
+    }
+    .contactAppointment-area Button{
+        width: 40% !important;
+        font-size: 3vw;
+        margin-left: 15%;
+        margin-top: -10px;
+    }
+    .donar-tag h2{
+        font-size: 3vw;
+    }
+    .donar-tag i{
+        font-size: 2vw;   
+    }
+    .donar-tag{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+    }
+    .tag-line{
+        margin-left: 15%;
+    }
+}

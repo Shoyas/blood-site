@@ -32,7 +32,7 @@ const Footer = () => {
                         <Link className="nav-link menu-item"  to="/donateBlood"><ul>
                             <li><strong className="menu-tag">Donate Blood</strong></li>
                         </ul></Link>
-                        <Link className="nav-link menu-item"  to="/donarCenter"><ul>
+                        <Link className="nav-link menu-item"  to="/donarLocation"><ul>
                             <li><strong className="menu-tag">Donor center locations</strong></li>
                         </ul></Link>
                         <Link className="nav-link menu-item" to="/appointment"><ul>
