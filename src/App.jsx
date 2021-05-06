@@ -9,6 +9,8 @@ import Home from './Components/Home/Home';
 import DonateBlood from './Components/DonateBlood/DonateBlood';
 import DonarCenter from './Components/DonarCenter/DonarCenter';
 import Service from './Components/Service/Service';
+import SupportUs from './Components/SupportUs/SupportUs';
+import Contact from './Components/Contact/Contact';
 
 const App = () => {
     return (
@@ -28,6 +30,12 @@ const App = () => {
                 </Route>
                 <Route path="/services">
                     <Service />
+                </Route>
+                <Route path="/support">
+                    <SupportUs />
+                </Route>
+                <Route path="/contact">
+                    <Contact />
                 </Route>
                 {/* <Route path="/home">
                     <Home />

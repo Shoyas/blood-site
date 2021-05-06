@@ -41,11 +41,8 @@ const Footer = () => {
                         <Link className="nav-link menu-item" to="/services"><ul>
                             <li><strong className="menu-tag">Services</strong></li>
                         </ul></Link>
-                        <Link className="nav-link menu-item" to="/supportUs"><ul>
+                        <Link className="nav-link menu-item" to="/support"><ul>
                             <li><strong className="menu-tag">Support us</strong></li>
-                        </ul></Link>
-                        <Link className="nav-link menu-item" to="/about"><ul>
-                            <li><strong className="menu-tag">About Us</strong></li>
                         </ul></Link>
                         <Link className="nav-link menu-item" to="/contact"><ul>
                             <li><strong className="menu-tag">Contact Us</strong></li>

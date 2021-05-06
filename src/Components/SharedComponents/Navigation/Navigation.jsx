@@ -37,10 +37,10 @@ const Navigation = () => {
                                 <Link className="nav-link" to="/services">Services</Link>
                             </Nav.Link>
                             <Nav.Link>
-                                <Link className="nav-link" to="/aboutUs">About Us</Link>
+                                <Link className="nav-link" to="/support">Support Us</Link>
                             </Nav.Link>
                             <Nav.Link>
-                                <Link className="nav-link" to="/contactUs">Contact Us</Link>
+                                <Link className="nav-link" to="/contact">Contact Us</Link>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

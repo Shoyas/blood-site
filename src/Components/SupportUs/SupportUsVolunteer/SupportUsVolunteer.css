@@ -1,0 +1,52 @@
+/* .support-volunteer h2{
+    font-size: 2vw;
+} */
+/* Responsive */
+@media screen and (max-width: 1080px) {
+     
+}
+@media screen and (max-width: 840px) {
+     
+}
+@media screen and (max-width: 780px) {
+    .bloodDay-image-tag{
+        height: 40%;
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 540px) {
+    .bloodDay-image-tag{
+        height: 35%;
+    }
+}
+@media screen and (max-width: 414px) {
+    .bloodDay-image-tag{
+        height: 40%;
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 411px) {
+    .bloodDay-image-tag{
+        height: 40%;
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 375px){
+       
+}
+@media screen and (max-width: 360px) {
+    .bloodDay-image-tag{
+        height: 45%;
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 320px) {
+    
+}
+@media screen and (max-width: 280px) {
+    .bloodDay-image-tag{
+        height: 45%;
+        padding: 2%;
+        margin: 2% 3% 0% 34%;
+    }
+}
