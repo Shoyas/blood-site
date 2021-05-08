@@ -15,7 +15,7 @@ const BloodDay = () => {
     // setInterval(updateTime, 1000);
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const registerInfoSubmit = data => console.log(data);
+    const volunteerRegisterInfoSubmit = volunteerData => console.log(volunteerData);
     console.log(watch("example"));
     
     return (
@@ -52,20 +52,20 @@ const BloodDay = () => {
                                     </strong></p>
                                 </div>
                                 <div className="col-md-6">
-                                    <form onSubmit={handleSubmit(registerInfoSubmit)} className="mt-5">
+                                    <form onSubmit={handleSubmit(volunteerRegisterInfoSubmit)} className="mt-5">
                                         <input placeholder="Name" className="input-design" {...register("name", { required: true })} />
-                                        {errors.exampleRequired && <span>This field is required</span>}
+                                        {errors.exampleRequired && <span>Name is required</span>}
                                         <br/>
                                         <br/>
                                         <input placeholder="Email" className="input-design" type="email" {...register("email", { required: true })} />
-                                        {errors.exampleRequired && <span>This field is required</span>}
+                                        {errors.exampleRequired && <span>Email is required</span>}
                                         <br/>
                                         <br/>
                                         <input placeholder="Phone" className="input-design" type="tel" {...register("phone", { required: true })} />
-                                        {errors.exampleRequired && <span>This field is required</span>}
+                                        {errors.exampleRequired && <span>Phone is required</span>}
                                         <br/>
                                         <br/>
-                                        <Button className="button-glow" variant="danger" type="submit">Make An Appointment</Button>
+                                        <Button className="button-glow" variant="danger" type="submit">Join Today</Button>
                                     </form>
                                 </div>
                             </div>

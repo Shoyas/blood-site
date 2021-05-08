@@ -1,0 +1,12 @@
+
+.form-control{
+    width: 70%;
+}
+.form-control:focus { 
+    outline: none !important;
+    border-color: #d15f5f;
+    box-shadow: 0 0 10px #ce7176;
+}
+.date-form{
+    text-align: center;
+}

@@ -30,10 +30,6 @@ const SupportUsVolunteer = () => {
                         {errors.exampleRequired && <span>Phone is required</span>}
                         <br/>
                         <br/>
-                        <textarea placeholder="Message" className="input-design" type="text" rows="4" cols="50" {...register("message", { required: true })}></textarea>
-                        {errors.exampleRequired && <span>Message is required</span>}
-                        <br/>
-                        <br/>
                         <Button className="button-glow" variant="danger" type="submit">Join Today</Button>
                     </form>
                 </div>

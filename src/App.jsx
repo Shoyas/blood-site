@@ -11,6 +11,7 @@ import DonarCenter from './Components/DonarCenter/DonarCenter';
 import Service from './Components/Service/Service';
 import SupportUs from './Components/SupportUs/SupportUs';
 import Contact from './Components/Contact/Contact';
+import Appointment from './Components/Appointment/Appointment';
 
 const App = () => {
     return (
@@ -28,6 +29,9 @@ const App = () => {
                 <Route path="/donarLocation">
                     <DonarCenter />
                 </Route>
+                <Route path="/appointment">
+                    <Appointment />
+                </Route>
                 <Route path="/services">
                     <Service />
                 </Route>
@@ -37,9 +41,7 @@ const App = () => {
                 <Route path="/contact">
                     <Contact />
                 </Route>
-                {/* <Route path="/home">
-                    <Home />
-                </Route> */}
+                
             </Switch>
         </Router>
     );
