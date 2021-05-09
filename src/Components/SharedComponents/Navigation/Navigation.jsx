@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import { UserContext } from '../../../App';
 import logo from '../../asset/image/mt-1802-logo02.png';
 
 const Navigation = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <>
         {/* style={{marginBottom: '5.6%'}} */}
@@ -21,6 +23,7 @@ const Navigation = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
+                            <p>{loggedInUser.name}</p>
                             <Nav.Link>
                                 <Link className="nav-link" to="/home">Home</Link>
                             </Nav.Link>
@@ -41,6 +44,12 @@ const Navigation = () => {
                             </Nav.Link>
                             <Nav.Link>
                                 <Link className="nav-link" to="/contact">Contact Us</Link>
+                            </Nav.Link>
+                            <Nav.Link>
+                                <Link className="nav-link" to="/login">Login</Link>
+                            </Nav.Link>
+                            <Nav.Link>
+                                <Link className="nav-link" to="/profile">Profile</Link>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

@@ -2,6 +2,7 @@ import React from 'react';
 import './MakeImpact.css';
 import image_one from '../../asset/image/mt-1802-content-bg01.jpg';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const MakeImpact = () => {
@@ -22,7 +23,9 @@ const MakeImpact = () => {
                             treatment, and other essentials.
                         </i>
                         <br/>
-                        <Button className="button-glow mt-4" variant="danger">Donate Now</Button>
+                        <Button className="button-glow" variant="danger">
+                            <Link to="/donate" className="nav-link nav-button">Donate Now</Link>
+                        </Button>
                     </div>
                 </div>
             </div>   

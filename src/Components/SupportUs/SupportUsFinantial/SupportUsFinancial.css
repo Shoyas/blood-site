@@ -35,6 +35,14 @@
     width: 50%;
     border-bottom:2px solid #ff0000;
 }
+.nav-button{
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white;
+}
+.nav-button:hover{
+    color: white;
+}
 
 /* Responsive */
 @media screen and (max-width: 1080px) {

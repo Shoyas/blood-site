@@ -2,6 +2,7 @@ import React from 'react';
 import './SupportUsFinancial.css';
 import image from '../../asset/image/mt-1802-support-img04.jpg';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const SupportUsFinancial = () => {
@@ -24,12 +25,17 @@ const SupportUsFinancial = () => {
                                 <div className="supportUs-header-line"></div>
                                 <h6>Monthly Giving</h6>
                                 <p>Monthly Giving is the best way to ensure our organization has a steady stream of funds helping more patients in need. For as little as $5 a month you can help us save more lives each year.</p>
-                                <Button className="button-glow mt-4" variant="danger">Donate</Button>
+                                
+                                <Button className="button-glow mt-4" variant="danger">
+                                    <Link to="/donate" className="nav-link nav-button">Donate</Link>
+                                </Button>
                             </div>
                             <div className="supportUs-center-tag mt-5">
                                 <h6>Support for Urgent Cases</h6>
                                 <p>We provide fast, competent support for urgent cases. We organize direct on-site support when necessary. We personally monitor all repairs.Your little giving can be very important for a person who needs.</p>
-                                <Button className="button-glow mt-4" variant="danger">Donate</Button>
+                                <Button className="button-glow mt-4" variant="danger">
+                                    <Link to="/donate" className="nav-link nav-button">Donate</Link>
+                                </Button>
                             </div>
                             
                         </div>

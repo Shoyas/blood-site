@@ -27,6 +27,14 @@
     box-shadow:none !important;
     outline:0px !important;
 }
+.nav-button{
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white;
+}
+.nav-button:hover{
+    color: white;
+}
 
 /* Responsive */
 

@@ -33,6 +33,14 @@
     background-color: #ff0000;
     margin-left: 20%;
 }
+.nav-button{
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white;
+}
+.nav-button:hover{
+    color: white;
+}
 
 /* Responsive */
 @media screen and (max-width: 1080px) {

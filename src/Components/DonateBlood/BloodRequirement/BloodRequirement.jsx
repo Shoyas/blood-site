@@ -25,7 +25,9 @@ const BloodRequirement = () => {
                     <p><strong>
                     If you have any questions regarding your eligibility, please email us at <a href="mailto:bloodSite1@gmail.com">bloodSite1@gmail.com</a>
                     </strong></p>
-                    <Button className="button-glow mt-4" variant="danger">Make An Appointment</Button>
+                    <Button className="button-glow" variant="danger">
+                        <Link to="/appointment" className="nav-link nav-button">Make An Appointment</Link>
+                    </Button>
                 </div>
                 <div className="col-md-6">
                     <img className="img-fluid" src={image} alt="" srcset=""/>

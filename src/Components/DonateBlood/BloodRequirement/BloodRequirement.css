@@ -11,6 +11,14 @@
 .bloodRequire-tag h5{
     font-size: 1vw;
 }
+.nav-button{
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white;
+}
+.nav-button:hover{
+    color: white;
+}
 
 /* Responsive */
 @media screen and (max-width: 1080px) {
