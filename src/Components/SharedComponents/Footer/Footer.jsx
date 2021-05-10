@@ -52,11 +52,11 @@ const Footer = () => {
                         <div className="tag-heading">
                             <h3>Contact Us</h3>
                             <i className="mt-5 logo-paragraph">
-                            Bangladesdh Army University of Engineering & Technology (BAUET), Qadirabad Cantoment, Doyarampur, Natore.
+                            Bangladesh Army University of Engineering & Technology (BAUET), Qadirabad Cantoment, Doyarampur, Natore.
                             <br/>
                             <br/>
                             Phone: +880123456789
-                            <Link className="nav-link menu-item">bloodSite1@gmail.com</Link>
+                            <Link className="nav-link menu-item mail-color">bloodSite1@gmail.com</Link>
                             </i>
                         </div>
                         <div className="tag-heading mt-5">

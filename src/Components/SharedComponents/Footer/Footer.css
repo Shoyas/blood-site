@@ -55,7 +55,8 @@ li::before {
     color: white;
     margin-left: 5%;
 }
-.media-item:hover{
+.media-item:hover,
+.mail-color:hover{
     color: red;
     transition: 1s;
 }

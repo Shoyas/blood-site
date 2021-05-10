@@ -11,6 +11,7 @@ import Appointment from './Components/Appointment/Appointment';
 import Login from './Components/Login/Login';
 import Donate from './Components/Donate/Donate';
 import Profile from './Components/Profile/Profile';
+import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 
 export const UserContext = createContext();
 
@@ -39,9 +40,9 @@ const App = () => {
                     <Route path="/donarLocation">
                         <DonarCenter />
                     </Route>
-                    <Route path="/appointment">
+                    <ProtectedRoute path="/appointment">
                         <Appointment />
-                    </Route>
+                    </ProtectedRoute>
                     <Route path="/services">
                         <Service />
                     </Route>
@@ -54,9 +55,9 @@ const App = () => {
                     <Route path="/login">
                         <Login />
                     </Route>
-                    <Route path="/donate">
+                    <ProtectedRoute path="/donate">
                         <Donate />
-                    </Route>
+                    </ProtectedRoute>
                     <Route path="/profile">
                         <Profile />
                     </Route>

@@ -3,10 +3,15 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
 import { UserContext } from '../../App';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 
 const Login = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [newUser, setNewUser] = useState(false);
+    let history = useHistory();
+    let location = useLocation();
+
+    const { from } = location.state || { from: { pathname: "/" } };
 
     if(firebase.apps.length === 0){
         firebase.initializeApp(firebaseConfig);
@@ -29,7 +34,8 @@ const Login = () => {
                 photo: photoURL,
             }
             setLoggedInUser(signedInUser);
-            console.log(signedInUser);
+            // console.log(signedInUser);
+            history.replace(from);
 
         })
         .catch((error) => {
@@ -53,91 +59,96 @@ const Login = () => {
                 error: '',
             }
             setLoggedInUser(loggedOutUser);
+            history.replace(from);
         })
         .catch((err) => {
             // An error happened.
         });
     }
 
-    // // Create an account
-    // const handleInput = (event) => {
-    //     event.preventDefault();
-    //     let isFieldValid = true;
-    //     if(event.target.name === 'email'){
-    //         isFieldValid = /\S+@\S+\.\S+/.test(event.target.value);
-    //     }
-    //     if(event.target.name === 'password'){
-    //         const isPasswordValid = event.target.value.length > 6;
-    //         const passwordHasNumber = /\d{1}/.test(event.target.value);
-    //         isFieldValid = isPasswordValid && passwordHasNumber;
-    //     }
-    //     if(isFieldValid){
-    //         const newUserInfo = {...loggedInUser};
-    //         newUserInfo[event.target.name] = event.target.value;
-    //         setLoggedInUser(newUserInfo);
-    //     }
-    // }
-    // const handleLoginFormSubmit = (event) => {
-    //     event.preventDefault();
-    //     // console.log(user.email, user.password);
-    //     if(newUser && loggedInUser.email && loggedInUser.password){
-    //         firebase.auth().createUserWithEmailAndPassword(loggedInUser.email, loggedInUser.password)
-    //         .then((res) => {
-    //             // console.log(res.user);
-    //             const {displayName, email} = res.user;
-    //             const signedInUser = {
-    //                 isSignedIn: true,
-    //                 name: displayName,
-    //                 email: email,
-    //                 error: '',
-    //             }
-    //             setLoggedInUser(signedInUser);
-    //         })
-    //         .catch((error) => {
-    //             let errorCode = error.code;
-    //             let errorMessage = error.message;
+    // Create an account
+    const handleInput = (event) => {
+        event.preventDefault();
+        let isFieldValid = true;
+        if(event.target.name === 'email'){
+            isFieldValid = /\S+@\S+\.\S+/.test(event.target.value);
+        }
+        if(event.target.name === 'password'){
+            const isPasswordValid = event.target.value.length > 6;
+            const passwordHasNumber = /\d{1}/.test(event.target.value);
+            isFieldValid = isPasswordValid && passwordHasNumber;
+        }
+        if(isFieldValid){
+            const newUserInfo = {...loggedInUser};
+            newUserInfo[event.target.name] = event.target.value;
+            setLoggedInUser(newUserInfo);
+        }
+    }
+    const handleLoginFormSubmit = (event) => {
+        event.preventDefault();
+        // console.log(user.email, user.password);
+        if(newUser && loggedInUser.email && loggedInUser.password){
+            firebase.auth().createUserWithEmailAndPassword( loggedInUser.email, loggedInUser.password)
+            .then((res) => {
+                // console.log(res.user);
+                const {displayName, email} = res.user;
+                const signedInUser = {
+                    isSignedIn: true,
+                    name: displayName,
+                    email: email,
+                    error: '',
+                }
+                setLoggedInUser(signedInUser);
+                history.replace(from);
+            })
+            .catch((error) => {
+                let errorCode = error.code;
+                let errorMessage = error.message;
 
-    //             const newUserInfo = {...loggedInUser};
-    //             newUserInfo.error = errorMessage;
+                const newUserInfo = {...loggedInUser};
+                newUserInfo.error = errorMessage;
 
-    //             console.log(errorMessage);
-    //             setLoggedInUser(newUserInfo);
-    //         });
-    //     }
-    //     else{
-    //         alert('Enter right email or password...');
-    //     }
+                console.log(errorMessage);
+                setLoggedInUser(newUserInfo);
+            });
+        }
+        // else{
+        //     alert('Enter right email or password...');
+        // }
 
-    //     // sign in for creating account
-    //     if(!newUser && loggedInUser.email && loggedInUser.password){
-    //         firebase.auth().signInWithEmailAndPassword(loggedInUser.email, loggedInUser.password)
-    //         .then((res) => {
-    //             const {displayName, email} = res.user;
-    //             const signedInUser = {
-    //                 isSignedIn: true,
-    //                 name: displayName,
-    //                 email: email,
-    //                 error: '',
-    //             }
-    //             setLoggedInUser(signedInUser);
-    //         })
-    //         .catch((error) => {
-    //             var errorCode = error.code;
-    //             var errorMessage = error.message;
+        // sign in for creating account
+        if(!newUser && loggedInUser.email && loggedInUser.password){
+            firebase.auth().signInWithEmailAndPassword(loggedInUser.email, loggedInUser.password)
+            .then((res) => {
+                const {displayName, email} = res.user;
+                const signedInUser = {
+                    isSignedIn: true,
+                    name: displayName,
+                    email: email,
+                    error: '',
+                }
+                setLoggedInUser(signedInUser);
+                history.replace(from);
+            })
+            .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
 
-    //             const newUserInfo = {...loggedInUser};
-    //             newUserInfo.error = errorMessage;
+                const newUserInfo = {...loggedInUser};
+                newUserInfo.error = errorMessage;
 
-    //             console.log(errorMessage);
-    //             setLoggedInUser(newUserInfo);
-    //         });
-    //     }
-    // }
+                console.log(errorMessage);
+                setLoggedInUser(newUserInfo);
+            });
+        }
+    }
+
+
     console.log(loggedInUser);
 
 
     return (
-        <div style={{ 'text-align': 'center'}}>
+        <div style={{ 'text-align': 'center', 'marginTop': '80px'}}>
             <h2>Sign in with google</h2>
             {
                 loggedInUser.isSignedIn ?
@@ -147,7 +158,7 @@ const Login = () => {
             }
             <br />
             <br />
-            {/* <h2>Authentication</h2>
+            <h2>Authentication</h2>
             <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id="" />
             <label htmlFor="newUser">New User Sign up</label>
             <form action="" onSubmit={handleLoginFormSubmit}>
@@ -160,9 +171,10 @@ const Login = () => {
                 <br />
                 <input type="password" onBlur={handleInput} name="password" placeholder="Your Password" required id="" />
                 <br />
+                
                 <input type="submit" value="Submit" />
             </form>
-            <p style={{color: 'red'}}>{loggedInUser.error}</p> */}
+            <p style={{color: 'red'}}>{loggedInUser.error}</p>
         </div>
     );
 };
